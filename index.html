@@ -10,7 +10,7 @@
 <body>
   <div id="app" class="body-wrapper">
     <button @click="addItem" type="button" name="button">Via</button>
-    <input type="text" name="" placeholder="Aggiungi alla lista!" v-model="itemInput">
+    <input type="text" name="" placeholder="Aggiungi alla lista!" v-model="itemInput" v-on:keydown.13="addItem">
     <ul class="list">
       <li v-for="(item, i) in toDoList">{{item}}<span @click="deleteItem(toDoList, i)"> X</span></li>
     </ul>

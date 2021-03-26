@@ -17,5 +17,4 @@ var app = new Vue({
       this.itemInput = "";
     }
   }
-
 });
