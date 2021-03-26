@@ -5,11 +5,16 @@
 var app = new Vue({
   el: "#app",
   data: {
-    toDoList : ["pulire la stanza", "dare l'acqua alle piante", "fare la lavatrice"]
+    toDoList : ["pulire la stanza", "dare l'acqua alle piante", "fare la lavatrice"],
+    itemInput: "",
   },
   methods: {
     deleteItem : function(array, index){
       array.splice(index, 1);
+    },
+    addItem : function(){
+      this.itemInput !== "" ? this.toDoList.push(this.itemInput) : this.itemInput = "";
+      this.itemInput = "";
     }
   }
 

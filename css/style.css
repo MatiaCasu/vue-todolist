@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body-wrapper{
+  text-align: center;
+  width: 60%;
+  margin: 50px auto;
+}
+.list li{
+  list-style: none;
+  background-color: lightblue;
+  margin: 10px 0;
+  padding: 10px;
+}

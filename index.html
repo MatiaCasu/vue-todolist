@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <title>Vue To do list</title>
 </head>
 <body>
-  <div id="app" class="wrapper">
-    <input type="text" name="" placeholder="Aggiungi alla lista!">
+  <div id="app" class="body-wrapper">
+    <button @click="addItem" type="button" name="button">Via</button>
+    <input type="text" name="" placeholder="Aggiungi alla lista!" v-model="itemInput">
     <ul class="list">
       <li v-for="(item, i) in toDoList">{{item}}<span @click="deleteItem(toDoList, i)"> X</span></li>
     </ul>
