@@ -5,10 +5,13 @@
 var app = new Vue({
   el: "#app",
   data: {
-    toDoList : ["pulire la stanza", "dare l'acqua alle piante", "fare la lavatrice"],
+    toDoList: [],
     itemInput: "",
     inputPlaceholder: "Add something to do!",
-    buttonText: "Add"
+    buttonsText: {
+     addButton: "Add",
+     removeButton: "X",
+    }
   },
   methods: {
     deleteItem : function(array, index){
