@@ -2,15 +2,49 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: rgba(52, 80, 204, 0.7); */
 }
+
 .body-wrapper{
+  height: 100vh;
+  background-image: url(../img/coffee.jpg);
+  background-size: cover;
   text-align: center;
-  width: 60%;
-  margin: 50px auto;
+  padding: 30px;
 }
-.list li{
+
+.paper-list{
+ background-color: rgba(255,255,255,0.7);
+ box-shadow: 1px 1px 2px grey;
+ width: 50%;
+ height: 100%;
+ padding: 0 20px;
+ display: flex;
+ flex-direction: column;
+}
+
+.title{
+  font-family: 'Yellowtail', cursive;
+  font-size: 25px;
+  text-transform: capitalize;
+  flex-basis: 10%;
+  padding: 10px 0;
+}
+
+ul.list{
+  flex-basis: 80%;
   list-style: none;
-  background-color: lightblue;
-  margin: 10px 0;
-  padding: 10px;
+  overflow-y: auto;
+}
+
+ul.list li{
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+.add-item{
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

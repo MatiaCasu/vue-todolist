@@ -7,6 +7,8 @@ var app = new Vue({
   data: {
     toDoList : ["pulire la stanza", "dare l'acqua alle piante", "fare la lavatrice"],
     itemInput: "",
+    inputPlaceholder: "Add something to do!",
+    buttonText: "Add"
   },
   methods: {
     deleteItem : function(array, index){
